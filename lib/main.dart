@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:jobminiproject/view/Profile/Certification.dart';
+import 'package:jobminiproject/view/Profile/Editprofile.dart';
+import 'package:jobminiproject/view/Register/register.dart';
+import 'package:jobminiproject/view/Saved/Saved.dart';
+import 'package:jobminiproject/view/Tabbar/Tabbarui.dart';
 import 'package:jobminiproject/view/login/loginui.dart';
 import 'package:jobminiproject/view/onboard/onboardhome.dart';
 import 'package:jobminiproject/view/onboard/user.dart';
@@ -18,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Onboardscreenui()
+      home: const Tabbarui()
     );
   }
 }

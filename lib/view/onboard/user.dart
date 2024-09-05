@@ -13,6 +13,7 @@ class _OnboarduseruiState extends State<Onboarduserui> {
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
     return Scaffold(
+      backgroundColor: Colors.white,
       body:  Column(mainAxisAlignment: MainAxisAlignment.end,
         children: [
         SizedBox(height: 30,),
@@ -24,9 +25,9 @@ class _OnboarduseruiState extends State<Onboarduserui> {
         ),
       ),
 
-        SizedBox(height: 70,),
+        SizedBox(height: 50,),
         Container(
-          height: size.height*.38,
+          // height: size.height*.38,
           width: size.width*1,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.only(topLeft:Radius.circular(200),topRight: Radius.circular(200)),
@@ -43,7 +44,7 @@ class _OnboarduseruiState extends State<Onboarduserui> {
               Text("Your personalized gateway to success starts here \n"
                   "          with our job finder app’s welcome screen",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w700),),
 
-              SizedBox(height: 20,),
+              SizedBox(height: 45,),
 
               InkWell(onTap: (){
                 Navigator.push(
@@ -68,22 +69,7 @@ class _OnboarduseruiState extends State<Onboarduserui> {
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
-              
-              Container(
-                height: size.height*.052,
-                width: size.width*.58,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color:Color.fromRGBO(232, 143, 27, 1)
-                ),
-                child: Center(
-                  child: Text("I’m a Recruiter",style: TextStyle(
-                      color:Colors.white,fontSize: 18,fontWeight: FontWeight.bold
-
-                  ),),
-                ),
-              ),
+              SizedBox(height: 60,)
 
             ],
           ),
