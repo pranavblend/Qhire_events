@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:jobminiproject/view/Profile/Certification.dart';
+import 'package:jobminiproject/view/Profile/Editprofile.dart';
+import 'package:jobminiproject/view/Profile/Qualiification.dart';
 
 import '../../Customwidgets/textfield.dart';
 
@@ -54,50 +57,55 @@ class _ProfileuiState extends State<Profileui> {
                       SizedBox(height: 30,),
 
                       Center(
-                        child: Card(
-                          elevation: 4,
-                          child: Container(
-                            height: size.height * .065,
-                            width: size.width * .94,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                color: Colors.white),
+                        child: InkWell(onTap: (){ Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Editprofileui()));},
+                          child: Card(
+                            elevation: 4,
+                            child: Container(
+                              height: size.height * .065,
+                              width: size.width * .94,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: Colors.white),
 
-                            child: Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 18),
-                                  child: CircleAvatar(
-                                    child: Image.asset("assets/twit.png"),radius: 20,
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 18),
+                                    child: CircleAvatar(backgroundColor: Colors.white,
+                                      child: Image.asset("assets/uil_edit.png"),radius: 20,
+                                    ),
                                   ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 20,left: 10),
-                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text('Profile',style: TextStyle(
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 16
-                                      ),),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20,left: 10),
+                                    child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text('Profile',style: TextStyle(
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 16
+                                        ),),
 
 
-                                    ],
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                Spacer(),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: IconButton(
-                                      onPressed: () {
-                                      },
-                                      icon: Icon(
-                                        Icons.arrow_forward_ios_sharp,
-                                        size: 20,
-                                        color: Colors.black
-                                      )),
-                                )
+                                  Spacer(),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: IconButton(
+                                        onPressed: () {
+                                        },
+                                        icon: Icon(
+                                          Icons.arrow_forward_ios_sharp,
+                                          size: 20,
+                                          color: Colors.black
+                                        )),
+                                  )
 
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -108,50 +116,55 @@ class _ProfileuiState extends State<Profileui> {
                       SizedBox(height: 5,),
 
                       Center(
-                        child: Card(
-                          elevation: 4,
-                          child: Container(
-                            height: size.height * .065,
-                            width: size.width * .94,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                color: Colors.white),
+                        child: InkWell(onTap: (){ Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Qualificationui()));},
+                          child: Card(
+                            elevation: 4,
+                            child: Container(
+                              height: size.height * .065,
+                              width: size.width * .94,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: Colors.white),
 
-                            child: Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 18),
-                                  child: CircleAvatar(
-                                    child: Image.asset("assets/twit.png"),radius: 20,
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 18),
+                                    child: CircleAvatar(backgroundColor: Colors.white,
+                                      child: Image.asset("assets/emojione_graduation-cap (1).png"),radius: 20,
+                                    ),
                                   ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 20,left: 10),
-                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text('Qualifications',style: TextStyle(
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 16
-                                      ),),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20,left: 10),
+                                    child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text('Qualifications',style: TextStyle(
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 16
+                                        ),),
 
 
-                                    ],
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                Spacer(),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: IconButton(
-                                      onPressed: () {
-                                      },
-                                      icon: Icon(
-                                          Icons.arrow_forward_ios_sharp,
-                                          size: 20,
-                                          color: Colors.black
-                                      )),
-                                )
+                                  Spacer(),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: IconButton(
+                                        onPressed: () {
+                                        },
+                                        icon: Icon(
+                                            Icons.arrow_forward_ios_sharp,
+                                            size: 20,
+                                            color: Colors.black
+                                        )),
+                                  )
 
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -161,50 +174,57 @@ class _ProfileuiState extends State<Profileui> {
                       SizedBox(height: 5,),
 
                       Center(
-                        child: Card(
-                          elevation: 4,
-                          child: Container(
-                            height: size.height * .065,
-                            width: size.width * .94,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(12),
-                                color: Colors.white),
+                        child: InkWell(onTap: (){
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Certificationui()));
+                        },
+                          child: Card(
+                            elevation: 4,
+                            child: Container(
+                              height: size.height * .065,
+                              width: size.width * .94,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: Colors.white),
 
-                            child: Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 18),
-                                  child: CircleAvatar(
-                                    child: Image.asset("assets/twit.png"),radius: 20,
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 18),
+                                    child: CircleAvatar(
+                                      child: Image.asset("assets/twit.png"),radius: 20,
+                                    ),
                                   ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 20,left: 10),
-                                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text('Certifications',style: TextStyle(
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 16
-                                      ),),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 20,left: 10),
+                                    child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text('Certifications',style: TextStyle(
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 16
+                                        ),),
 
 
-                                    ],
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                Spacer(),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: IconButton(
-                                      onPressed: () {
-                                      },
-                                      icon: Icon(
-                                          Icons.arrow_forward_ios_sharp,
-                                          size: 20,
-                                          color: Colors.black
-                                      )),
-                                )
+                                  Spacer(),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: IconButton(
+                                        onPressed: () {
+                                        },
+                                        icon: Icon(
+                                            Icons.arrow_forward_ios_sharp,
+                                            size: 20,
+                                            color: Colors.black
+                                        )),
+                                  )
 
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -379,11 +399,16 @@ class _ProfileuiState extends State<Profileui> {
                   
                   
                 )),
-            Positioned(top:130,left:145,child: CircleAvatar(radius: 80,
-              backgroundColor: Color.fromRGBO(232, 143, 27, 1),
-            child: CircleAvatar(
-              backgroundColor: Colors.white,radius: 70,
-            ),),
+            Positioned(top:130,left:145,child: InkWell(onTap: (){ Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => Editprofileui()));},
+              child: CircleAvatar(radius: 80,
+                backgroundColor: Color.fromRGBO(232, 143, 27, 1),
+              child: CircleAvatar(
+                backgroundColor: Colors.white,radius: 70,
+              ),),
+            ),
             )
           ],
         )

@@ -649,17 +649,6 @@ class _HomescreenState extends State<Homescreen> {
               SizedBox(
                 height: 18,
               ),
-
-
-
-
-
-
-
-
-
-
-
               Container(
                 height: size.height * .188,
                 width: size.width * .9,

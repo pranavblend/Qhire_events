@@ -34,7 +34,7 @@ class CustomFormField extends StatelessWidget {
         onChanged: onChanged,
         validator: validator,
         decoration: InputDecoration(
-          contentPadding: const EdgeInsets.symmetric(vertical: 20),
+          contentPadding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
           hintText: hintText,
           hintStyle: TextStyle(color: Colors.black.withOpacity(.5)),
           border: OutlineInputBorder(
@@ -54,7 +54,7 @@ class CustomFormField extends StatelessWidget {
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide: BorderSide(
-              color: Colors.black.withOpacity(.05),
+              color: Colors.black.withOpacity(.5), // Darker color when focused
             ),
           ),
           disabledBorder: OutlineInputBorder(

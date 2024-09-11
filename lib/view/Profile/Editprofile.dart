@@ -27,7 +27,7 @@ class _EditprofileuiState extends State<Editprofileui> {
                   children: [
                     IconButton(
                         onPressed: () {
-                          Navigator.pop(
+                          Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>Profileui()));

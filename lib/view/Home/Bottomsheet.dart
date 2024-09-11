@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:jobminiproject/view/Home/Homeui.dart';
 
 class Bottomsheetui extends StatefulWidget {
   const Bottomsheetui({super.key});
@@ -21,7 +22,12 @@ class _BottomsheetuiState extends State<Bottomsheetui> {
         length: 3,
         child: Column(
           children: [
-            Icon(Icons.keyboard_arrow_down_outlined,size: 45,color: Color.fromRGBO(232, 143, 27, 1),),
+            IconButton(onPressed: (){
+              Navigator.pop(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>Homescreen()));
+            }, icon:  Icon(Icons.keyboard_arrow_down_outlined,size: 45,color: Color.fromRGBO(232, 143, 27, 1),)),
             Text("Filter",style: TextStyle(
               fontWeight: FontWeight.bold,fontSize: 20
             ),),
@@ -46,6 +52,7 @@ class _BottomsheetuiState extends State<Bottomsheetui> {
               unselectedLabelColor: Colors.black,
               unselectedLabelStyle: TextStyle(
                 decoration: TextDecoration.none,
+
               ),
               dividerColor: Colors.transparent,
             ),
@@ -586,20 +593,9 @@ class _SalaryuiState extends State<Salaryui> {
                 ],
               ),
             ),
-
-
-
-
-
-
-
-
-
-
           ],
         ),
       ),
     );
   }
 }
-
